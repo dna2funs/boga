@@ -1,0 +1,28 @@
+{
+  "name": "seven.lab.boga",
+  "displayName": "Boga",
+  "version": "1.0.0",
+  "description": "Boardgame Box",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Seven Liu and its contributors",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova": "^12.0.0",
+    "cordova-electron": "^4.0.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "level": "^8.0.1"
+  },
+  "cordova": {
+    "platforms": [
+      "electron"
+    ],
+    "plugins": {}
+  }
+}
