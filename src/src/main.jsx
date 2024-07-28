@@ -12,6 +12,7 @@ import _ from '$/i18n/index';
 
 import Layout from '$/layout.jsx';
 import PlaceHolder from '$/page/placeholder.jsx';
+import Portal from '$/page/portal';
 import About from '$/page/about.jsx';
 import Loading from '$/component/shared/loading.jsx';
 import Toast from '$/component/shared/toast.jsx';
@@ -22,7 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
      <HashRouter><Routes>
         <Route path="/" element={<Layout />}>
-           <Route index element={<About />} />
+           <Route index element={<Portal />} />
            <Route path="about" element={<About />} />
         </Route>
         <Route path="/login" element={<PlaceHolder name="login" />} />

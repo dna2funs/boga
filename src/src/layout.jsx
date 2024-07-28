@@ -6,11 +6,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useTranslation } from 'react-i18next';
 
 const i18nKeyMap = {
-   '/': 't.about',
+   '/': 't.portal',
    '/about': 't.about',
 };
 const titleMap = {
-   '/': 'About',
+   '/': 'Portal',
    '/about': 'About',
 };
 
@@ -34,7 +34,7 @@ export default function Layout() {
       <Box>
          <IconButton onClick={onMenuOpen}><MenuIcon /></IconButton> {title}
          <Menu anchorEl={anchorEl} open={open} onClose={onMenuClose}>
-            <Link onClick={onMenuClose} href="#/" underline="none"><MenuItem>{t('t.about', 'About')}</MenuItem></Link>
+            <Link onClick={onMenuClose} href="#/" underline="none"><MenuItem>{t('t.portal', 'Portal')}</MenuItem></Link>
             <Link onClick={onMenuClose} href="#/about" underline="none"><MenuItem>{t('t.about', 'About')}</MenuItem></Link>
          </Menu>
       </Box>

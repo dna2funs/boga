@@ -1,5 +1,6 @@
 const tr = {
    translation: {
+      't.portal': '大厅',
       't.about': '关于',
    },
    about: {
